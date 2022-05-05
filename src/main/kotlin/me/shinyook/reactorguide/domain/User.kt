@@ -10,6 +10,8 @@ data class User (
         val JESSE = User("jpinkman", "Jesse", "Pinkman")
         val WALTER = User("wwhite", "Walter", "White")
         val SAUL = User("sgoodman", "Saul", "Goodman")
+        val MARIE = User("mschrader", "Marie", "Schrader")
+        val MIKE = User("mehrmantraut", "Mike", "Ehrmantraut")
     }
     fun toUppercase(): User = User(this.username.uppercase(), this.firstname.uppercase(), this.lastname.uppercase())
 }
