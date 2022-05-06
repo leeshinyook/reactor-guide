@@ -16,7 +16,6 @@ internal class Part07ErrorTest {
         StepVerifier.create(mono)
             .expectNext(User.SAUL)
             .verifyComplete()
-
         mono = guideLine.betterCallSaulForBogusMono(Mono.just(User.JESSE))
         StepVerifier.create(mono)
             .expectNext(User.JESSE)
@@ -29,7 +28,6 @@ internal class Part07ErrorTest {
         StepVerifier.create(flux)
             .expectNext(User.SAUL, User.JESSE)
             .verifyComplete()
-
         flux = guideLine.betterCallSaulAndJesseForBogusFlux(Flux.just(User.MIKE, User.MARIE))
         StepVerifier.create(flux)
             .expectNext(User.MIKE, User.MARIE)
